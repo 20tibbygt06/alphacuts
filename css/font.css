@@ -1,0 +1,6 @@
+@font-face {
+    font-family: 'Sweet Sensations';
+    src: url(../assets/fonts/sweet_sensations.woff2) format('woff2'),
+         url(../assets/fonts/SweetSensations.woff) format('woff'),
+         url(../assets/fonts/SweetSensations.ttf) format('truetype');
+}
