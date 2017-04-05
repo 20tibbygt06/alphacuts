@@ -1,10 +1,11 @@
 a {
     text-decoration: none;
 }
-.w3-bar{
-  font-family: 'Roboto', serif;
 
+.w3-bar {
+    font-family: 'Roboto', serif;
 }
+
 .nav-info {
     background: url(../assets/img/background.png);
     background-repeat: no-repeat;
@@ -17,6 +18,11 @@ a {
     width: 225px;
     padding: 0;
     margin: 0;
+}
+
+.w3-closebtn {
+    padding: 10px 0px 5px 0;
+    
 }
 
 h1 {
