@@ -1,7 +1,10 @@
 a {
     text-decoration: none;
 }
+.w3-bar{
+  font-family: 'Roboto', serif;
 
+}
 .nav-info {
     background: url(../assets/img/background.png);
     background-repeat: no-repeat;
@@ -17,20 +20,20 @@ a {
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 55px;
     font-family: 'Sweet Sensations', serif;
     padding: 0;
     margin: 0;
 }
 
 h2 {
-    font-family: 'Roboto', serif;
+    font-family: 'Bree Serif', serif;
     font-weight: 900;
     letter-spacing: 3px;
 }
 
 h3 {
-    font-family: 'Roboto', serif;
+    font-family: 'Bree Serif', serif;
     font-weight: 500;
 }
 
@@ -41,8 +44,9 @@ h4 {
 }
 
 h5 {
-    font-family: 'Roboto', serif;
-    font-weight: 300;
+    font-family: 'Bree Serif', serif;
+    padding: 0;
+    margin: 0;
 }
 
 h6 {
