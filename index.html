@@ -50,212 +50,115 @@
     <!-- Instagram Slide -->
     <div id="instafeed" class="instafeed"></div>
 
-    <div class="w3-row">
-        <div class="w3-content">
-            <h2 class="w3-center">Wood Options</h2>
-            <div class="w3-row-padding">
-                <div class="w3-container w3-quarter">
-                    <div class="w3-container w3-border w3-black w3-center">
-                        <h5 class="w3-text-white"><b>Cherry</b></h5>
-                    </div>
-                    <img src="assets/img/Cordless/Plain/Cordless_Cherry_Plain.jpg" alt="WAHL Senior Lid" style="width:100%; cursor:pointer" class="w3-border-left w3-border-right w3-border-bottom w3-hover-opacity" onclick="onClick(this)">
-                </div>
-                <div class="w3-container w3-quarter">
-                    <div class="w3-container w3-border w3-black w3-center">
-                        <h5 class="w3-text-white"><b>Oak</b></h5>
-                    </div>
-                    <img src="assets/img/Cordless/Plain/Cordless_oak_Plain.jpg" alt="WAHL Senior Lid" style="width:100%; cursor:pointer" class="w3-border-left w3-border-right w3-border-bottom w3-hover-opacity" onclick="onClick(this)">
-                </div>
-                <div class="w3-container w3-quarter">
-                    <div class="w3-container w3-border w3-black w3-center">
-                        <h5 class="w3-text-white"><b>Walnut</b></h5>
-                    </div>
-                    <img src="assets/img/Cordless/Plain/Cordless_walnut_Plain.jpg" alt="WAHL Senior Lid" style="width:100%; cursor:pointer" class="w3-border-left w3-border-right w3-border-bottom w3-hover-opacity" onclick="onClick(this)">
-                </div>
-                <div class="w3-container w3-quarter">
-                    <div class="w3-container w3-border w3-black w3-center">
-                        <h5 class="w3-text-white"><b>Sycamore</b></h5>
-                    </div>
-                    <img src="assets/img/Cordless/Plain/Cordless_sycamore_Plain.jpg" alt="WAHL Senior Lid" style="width:100%; cursor:pointer" class="w3-border-left w3-border-right w3-border-bottom w3-hover-opacity" onclick="onClick(this)">
-                </div>
-
-                <div id="modal01" class="w3-modal w3-center" onclick="this.style.display='none'">
-                    <img class="w3-modal-content" id="img01" style="width:720px">
-                </div>
-
-                <script>
-                    function onClick(element) {
-                        document.getElementById("img01").src = element.src;
-                        document.getElementById("modal01").style.display = "block";
-                    }
-                </script>
-
-            </div>
-        </div>
-    </div>
-
-    <!-- Engraving -->
-    <div class="w3-row">
-        <div class="w3-content">
-            <h2 class="w3-center">Make it Unique</h2>
-            <div class="w3-panel w3-col m3"></div>
-            <div class="w3-panel w3-col m6 w3-center w3-white">
-                <p>Add the option to fully customize your cover by engraving your logo or brand. All logo and brand images must be black and white. Please send your image as .jpg, .png, .svg in a high resolution for best quality. Questions about engraving an image? Email us at contact@alphacuts.club</p>
-
-                <img src="assets/img/senior/engraved/senior_oak_engraved.jpg" alt="WAHL Senior Lid" style="width:100%" class="w3-margin-bottom">
-            </div>
-        </div>
-    </div>
-
     <!-- Products -->
     <div class="w3-row" id="Lids">
         <div class="w3-content">
-            <h2 class="w3-center">Clipper Covers</h2>
+            <h2 class="w3-center">Clippers</h2>
 
             <!-- WAHL Senior Panel -->
-            <div class="w3-panel w3-col m6" onclick="document.getElementById('wahl-senior').style.display='block'" style="cursor:pointer">
-                <div class="w3-container w3-border w3-black w3-center">
-                    <h5 class="product-title">WAHL Senior</h5>
+            <div class="w3-panel">
+                <header class="w3-container w3-border w3-border-white w3-border w3-center">
+                    <h3 class="product-title">WAHL Senior</h3>
+                </header>
+                <div class="w3-col m6 w3-border w3-border-white w3-content w3-display-container">
+                    <img class="wahlSenior" src="assets/img/senior/engraved/senior_sycamore_engraved_1.jpg" style="width:100%">
+                    <img class="wahlSenior" src="assets/img/senior/engraved/senior_sycamore_engraved_2.jpg" style="width:100%">
+                    <img class="wahlSenior" src="assets/img/senior/engraved/senior_sycamore_engraved_3.jpg" style="width:100%">
+                    <img class="wahlSenior" src="assets/img/senior/engraved/senior_oak_engraved.jpg" style="width:100%">
+                    <button class="w3-button w3-black w3-border w3-hover-white w3-display-left" onclick="plusDivsOne(-1)">&#10094;</button>
+                    <button class="w3-button w3-black w3-border w3-hover-white w3-display-right" onclick="plusDivsOne(1)">&#10095;</button>
                 </div>
-                <img src="assets/img/senior/engraved/senior_sycamore_engraved_1.jpg" alt="WAHL Senior Lid" style="width:100%" class="w3-border-left w3-border-right w3-hover-grayscale">
-                <div class="w3-container w3-white w3-hover-blue w3-center">
-                    <h6><b>View</b></h6>
-                </div>
-            </div>
-
-            <!-- WAHL Senior Modal -->
-            <div id="wahl-senior" class="w3-modal">
-                <div class="w3-modal-content">
-                    <header class="w3-container w3-black w3-border w3-center">
-                        <span onclick="document.getElementById('wahl-senior').style.display='none'" class="w3-closebtn w3-hover-text-red">&times;</span>
-                        <h3 class="product-title">WAHL Senior Lid</h3>
-                    </header>
-                    <div class="w3-col m6 w3-content w3-display-container">
-                        <img class="wahlSenior" src="assets/img/senior/engraved/senior_sycamore_engraved_1.jpg" style="width:100%">
-                        <img class="wahlSenior" src="assets/img/senior/engraved/senior_sycamore_engraved_2.jpg" style="width:100%">
-                        <img class="wahlSenior" src="assets/img/senior/engraved/senior_sycamore_engraved_3.jpg" style="width:100%">
-                        <img class="wahlSenior" src="assets/img/senior/engraved/senior_oak_engraved.jpg" style="width:100%">
-                        <button class="w3-button w3-black w3-border w3-hover-white w3-display-left" onclick="plusDivsOne(-1)">&#10094;</button>
-                        <button class="w3-button w3-black w3-border w3-hover-white w3-display-right" onclick="plusDivsOne(1)">&#10095;</button>
-                    </div>
-                    <div class="w3-container w3-white w3-col m6">
-                        <p>
-                            Lids are handcrafted to your unqiue style.
-                        </p>
-                        <h6><b>Wood Types:</b></h6>
-                        <p>
-                            Cherry
-                            <br> Walnut
-                            <br> Oak
-                            <br> Sycamore
-                        </p>
-                        <p>
-                            Custom engraving available
-                        </p>
-                        <div class="w3-center">
-                            <button class="snipcart-add-item w3-btn w3-black w3-padding-small w3-hover-blue" data-item-id="1" data-item-name="WAHL Senior Lid" data-item-price="60.00" data-item-url="/" data-item-description="Handrcrafted" data-item-image="assets/img/eight.jpg" data-item-custom1-name="Wood Type"
-                                data-item-custom1-options="Cherry|Walnut|Oak|Sycamore" data-item-custom1-required="true" data-item-custom2-name="Engraving" data-item-custom2-options="Plain|Engraved +10.00[+10.00]" data-item-custom2-required="true" data-item-custom3-name="Engraving Description"
-                                data-item-custom3-type="textarea">
-                      Add to Cart
-                    </button>
+                <div class="w3-container w3-border w3-border-white w3-black w3-col m6">
+                    <p>
+                        Lids are handcrafted to your unqiue style.
+                    </p>
+                    <h6><b>Wood Options</b></h6>
+                    <div class="w3-display-container w3-quarter">
+                        <img src="assets/img/cordless/plain/cordless_cherry_plain.jpg" alt="WAHL Senior Lid" style="width:100%; cursor:pointer" class="w3-border-left w3-border-right w3-border-bottom w3-hover-opacity" onclick="onClick(this)">
+                        <div class="w3-display-bottommiddle w3-container">
+                            <p><b>Cherry</b></p>
                         </div>
+                    </div>
+                    <div class="w3-display-container w3-quarter">
+                        <img src="assets/img/cordless/plain/cordless_oak_plain.jpg" alt="WAHL Senior Lid" style="width:100%; cursor:pointer" class="w3-border-left w3-border-right w3-border-bottom w3-hover-opacity" onclick="onClick(this)">
+                        <div class="w3-display-bottommiddle w3-container">
+                            <p><b>Oak</b></p>
+                        </div>
+                    </div>
+                    <div class="w3-display-container w3-quarter">
+                        <img src="assets/img/cordless/plain/cordless_walnut_plain.jpg" alt="WAHL Senior Lid" style="width:100%; cursor:pointer" class="w3-border-left w3-border-right w3-border-bottom w3-hover-opacity" onclick="onClick(this)">
+                        <div class="w3-display-bottommiddle w3-container">
+                            <p><b>Walnut</b></p>
+                        </div>
+                    </div>
+                    <div class="w3-display-container w3-quarter">
+                        <img src="assets/img/cordless/plain/cordless_sycamore_plain.jpg" alt="WAHL Senior Lid" style="width:100%; cursor:pointer" class="w3-border-left w3-border-right w3-border-bottom w3-hover-opacity" onclick="onClick(this)">
+                        <div class="w3-display-bottommiddle w3-container">
+                            <p><b>Sycamore</b></p>
+                        </div>
+                    </div>
+
+                    <div id="modal01" class="w3-modal w3-center" onclick="this.style.display='none'">
+                        <img class="w3-modal-content" id="img01" style="width:720px">
+                    </div>
+
+                    <script>
+                        function onClick(element) {
+                            document.getElementById("img01").src = element.src;
+                            document.getElementById("modal01").style.display = "block";
+                        }
+                    </script>
+                    <h6><b>Engraving</b></h6>
+                    <p>
+                        Add the option to fully customize your cover by engraving your logo or brand. All logo and brand images must be black and white. Please send your image as .jpg, .png, .svg in a high resolution for best quality. Questions about engraving an image? Email
+                        us at contact@alphacuts.club </p>
+                    <div class="w3-center">
+                        <button class="snipcart-add-item w3-btn w3-white w3-padding-small w3-hover-blue" data-item-id="1" data-item-name="WAHL Senior Lid" data-item-price="60.00" data-item-url="/" data-item-description="Handrcrafted" data-item-image="assets/img/eight.jpg" data-item-custom1-name="Wood Type"
+                            data-item-custom1-options="Cherry|Walnut|Oak|Sycamore" data-item-custom1-required="true" data-item-custom2-name="Engraving" data-item-custom2-options="Plain|Engraved +10.00[+10.00]" data-item-custom2-required="true" data-item-custom3-name="Engraving Description"
+                            data-item-custom3-type="textarea">
+                  Add to Cart
+                </button>
                     </div>
                 </div>
             </div>
 
             <!--WAHL Magic Panel -->
-            <div class="w3-panel w3-col m6" onclick="document.getElementById('wahl-magic').style.display='block'" style="cursor:pointer">
-                <div class="w3-container w3-border w3-black w3-center">
-                    <h5 class="product-title">WAHL Magic</h5>
+            <div class="w3-panel">
+                <header class="w3-container w3-white w3-border w3-border-white w3-border w3-center">
+                    <h3 class="product-title">WAHL Magic</h3>
+                </header>
+                <div class="w3-col m6 w3-border w3-border-white w3-content w3-display-container">
+                    <img class="wahlMagic" src="assets/img/cordless/engraved/cordless_oak_engraved.jpg" style="width:100%">
+                    <img class="wahlMagic" src="assets/img/cordless/engraved/cordless_walnut_engraved_machine_1.jpg" style="width:100%">
+                    <img class="wahlMagic" src="assets/img/cordless/engraved/cordless_oak_engraved.jpg" style="width:100%">
+                    <img class="wahlMagic" src="assets/img/cordless/engraved/cordless_oak_engraved.jpg" style="width:100%">
+                    <button class="w3-button w3-black w3-border w3-hover-white w3-display-left" onclick="plusDivsTwo(-1)">&#10094;</button>
+                    <button class="w3-button w3-black w3-border w3-hover-white w3-display-right" onclick="plusDivsTwo(1)">&#10095;</button>
                 </div>
-                <img src="assets/img/cordless/engraved/cordless_oak_engraved.jpg" alt="Cubs" style="width:100%" class="w3-border-left w3-border-right w3-hover-grayscale">
-                <div class="w3-container w3-white w3-hover-blue w3-center">
-                    <h6><b>View</b></h6>
-                </div>
-            </div>
-
-            <!--WAHL Magic Modal -->
-            <div id="wahl-magic" class="w3-modal">
-                <div class="w3-modal-content">
-                    <header class="w3-container w3-black w3-border w3-center">
-                        <span onclick="document.getElementById('wahl-magic').style.display='none'" class="w3-closebtn w3-hover-text-red">&times;</span>
-                        <h3 class="product-title">WAHL Magic Lid</h3>
-                    </header>
-                    <div class="w3-col m6 w3-content w3-display-container">
-                        <img class="wahlMagic" src="assets/img/cordless/engraved/cordless_oak_engraved.jpg" style="width:100%">
-                        <img class="wahlMagic" src="assets/img/cordless/engraved/cordless_walnut_engraved_machine_1.jpg" style="width:100%">
-                        <img class="wahlMagic" src="assets/img/cordless/engraved/cordless_oak_engraved.jpg" style="width:100%">
-                        <img class="wahlMagic" src="assets/img/cordless/engraved/cordless_oak_engraved.jpg" style="width:100%">
-                        <button class="w3-button w3-black w3-border w3-hover-white w3-display-left" onclick="plusDivsTwo(-1)">&#10094;</button>
-                        <button class="w3-button w3-black w3-border w3-hover-white w3-display-right" onclick="plusDivsTwo(1)">&#10095;</button>
-                    </div>
-                    <div class="w3-container w3-white w3-col m6 modal-info">
-                        <p>
-                            Lids are handcrafted to your unqiue style.
-                        </p>
-                        <h6><b>Wood types:</b></h6>
-                        <p>
-                            Cherry <br> Walnut <br> Oak <br> Sycamore
-                        </p>
-                        <p>
-                            Engraving extra. Options listed in cart
-                        </p>
-                        <button class="snipcart-add-item w3-btn w3-black w3-padding-small w3-hover-blue" data-item-id="2" data-item-name="WAHL Magic Cordless Lid" data-item-price="60.00" data-item-url="/" data-item-description="Handrcrafted" data-item-image="assets/img/two.jpg"
+                <div class="w3-container w3-border w3-border-white w3-col m6 modal-info">
+                    <p>
+                        Lids are handcrafted to your unqiue style.
+                    </p>
+                    <h6><b>Wood Options</b></h6>
+                    <p>
+                        Cherry <br> Walnut <br> Oak <br> Sycamore
+                    </p>
+                    <h6><b>Engraving</b></h6>
+                    <p>
+                        Add the option to fully customize your cover by engraving your logo or brand. All logo and brand images must be black and white. Please send your image as .jpg, .png, .svg in a high resolution for best quality. Questions about engraving an image? Email
+                        us at contact@alphacuts.club </p>
+                    <div class="w3-center">
+                        <button class="snipcart-add-item w3-btn w3-white w3-padding-small w3-hover-blue" data-item-id="2" data-item-name="WAHL Magic Cordless Lid" data-item-price="60.00" data-item-url="/" data-item-description="Handrcrafted" data-item-image="assets/img/two.jpg"
                             data-item-custom1-name="Wood Type" data-item-custom1-options="Cherry|Walnut|Oak|Sycamore" data-item-custom1-required="true" data-item-custom2-name="Engraving" data-item-custom2-options="Plain|Engraved +10.00[+10.00]" data-item-custom2-required="true"
                             data-item-custom3-name="Engraving Description (links)" data-item-custom3-type="textarea">
-                    Add to Cart
-                    </button>
+                Add to Cart
+                </button>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
-
-    <!-- Accessories -->
-    <!-- <div class="w3-row">
-        <div class="w3-content">
-            <h2 class="w3-center">Accessories</h2>
-
-            <div class="w3-panel w3-col m4" onclick="document.getElementById('wood-comb').style.display='block'" style="cursor:pointer">
-                <div class="w3-container w3-border w3-black w3-center">
-                    <h5 class="product-title">Natural Wood Comb</h5>
-                </div>
-                <img src="assets/img/four.jpg" alt="Cubs" style="width:100%" class="w3-border-left w3-border-right w3-hover-grayscale">
-                <div class="w3-container w3-white w3-center">
-                    <h6>Starting at<b> $25.00</b></h6>
-                </div>
-            </div>
-
-            <div id="wood-comb" class="w3-modal">
-                <div class="w3-modal-content">
-                    <header class="w3-container w3-black w3-border w3-center">
-                        <span onclick="document.getElementById('wood-comb').style.display='none'" class="w3-closebtn w3-hover-text-red">&times;</span>
-                        <h3 class="product-title">Natural Wood Comb</h3>
-                    </header>
-                    <div class="w3-col m6 w3-content w3-display-container">
-                        <img class="woodComb" src="assets/img/four.jpg" style="width:100%">
-                        <img class="woodComb" src="assets/img/eight.jpg" style="width:100%">
-                        <img class="woodComb" src="assets/img/nine.jpg" style="width:100%">
-                        <img class="woodComb" src="assets/img/eight.jpg" style="width:100%">
-                        <button class="w3-button w3-black w3-hover-white w3-display-left" onclick="plusDivsThree(-1)">&#10094;</button>
-                        <button class="w3-button w3-black w3-hover-white w3-display-right" onclick="plusDivsThree(1)">&#10095;</button>
-                    </div>
-                    <div class="w3-container w3-white w3-col m6 modal-info">
-                        <p>
-                            Natural wood comb. The perfect accessory.
-                        </p>
-                        <p>
-                            Engraving extra. Options listed in cart
-                        </p>
-                        <button class="snipcart-add-item w3-btn w3-black w3-padding-small w3-hover-blue" data-item-id="3" data-item-name="Natural Wood Comb" data-item-price="25.00" data-item-url="/" data-item-description="Handrcrafted" data-item-image="assets/four.jpg" data-item-custom1-name="Engraving"
-                            data-item-custom1-options="Plain|Engraved +10.00[+10.00]" data-item-custom1-required="true" data-item-custom2-name="Engraving Description (links)" data-item-custom2-type="textarea">
-                        Add to Cart
-                    </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
 
     <!--Fixed Cart & Total Button -->
     <div class="fixed-action-btn">
