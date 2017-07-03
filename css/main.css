@@ -2,10 +2,6 @@ a {
     text-decoration: none;
 }
 
-.w3-bar {
-    font-family: 'Roboto', serif;
-}
-
 .nav-info {
     background: url(../assets/img/background.png);
     background-repeat: no-repeat;
@@ -14,14 +10,9 @@ a {
     min-height: 370px;
 }
 
-.logo {
-    width: 225px;
-    padding: 0;
-    margin: 0;
-}
-
-.w3-closebtn {
-    padding: 10px 0px 5px 0;
+.banner-color{
+  background-color: #BD5038;
+  color: #fff;
 }
 
 h1 {
@@ -38,8 +29,8 @@ h2 {
 }
 
 h3 {
-    font-family: 'Roboto', serif;
-    font-weight: 500;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 900;
 }
 
 h4 {
@@ -59,8 +50,23 @@ h6 {
 }
 
 p {
-    font-family: 'Roboto Condensed', serif;
-    font-size: 13px;
+    font-family: 'Open Sans Condensed', serif;
+    font-size: 14px;
+    letter-spacing: .25px;
+
+}
+
+@media only screen and (max-width: 767px) {
+    p {
+        font-family: 'Open Sans Condensed', serif;
+        font-size: 11px;
+        letter-spacing: .25px;
+
+    }
+}
+
+.margin-fix {
+    margin: 32px 16px;
 }
 
 .product-title {
@@ -75,11 +81,11 @@ p {
     z-index: 998;
 }
 
-.snipcart-add-item {
-    margin-bottom: 10px;
-}
-
 .snipcart-total-price {
     font-family: 'Roboto Condensed', serif;
     font-weight: bold;
+}
+
+.footer-color{
+  background-color: #000;
 }
