@@ -1,91 +1,95 @@
+body {
+  background-color: #111;
+}
+
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-.nav-info {
-    background: url(../assets/img/background.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    min-height: 370px;
-}
-
-.banner-color{
-  background-color: #BD5038;
+footer {
+  background-color: #333;
   color: #fff;
 }
 
+.brand-title {
+  background: url(../assets/img/background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 370px;
+  color: #fff;
+  padding: 32px 0px;
+}
+
+.margin-fix {
+  margin: 32px 16px;
+}
+
+.wood-title {
+  font-family: 'Open Sans Condensed', serif;
+  font-size: 14px;
+  letter-spacing: .25px;
+}
+
+.w3-btn{
+  font-family: 'Roboto', serif;
+
+}
+.fixed-action-btn {
+  position: fixed;
+  right: 16px;
+  top: 16px;
+  margin-bottom: 0;
+  z-index: 998;
+}
+
+.snipcart-total-price {
+  font-family: 'Roboto Condensed', serif;
+  font-weight: bold;
+}
+
+.custom-white {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #000;
+}
+
 h1 {
-    font-size: 55px;
-    font-family: 'Sweet Sensations', serif;
-    padding: 0;
-    margin: 0;
+  font-family: 'Sweet Sensations', serif;
+  font-size: 55px;
 }
 
 h2 {
-    font-family: 'Roboto Condensed', serif;
-    font-weight: 900;
-    letter-spacing: 2px;
+  font-family: 'Patua One', serif;
+  font-size: 40px;
 }
 
 h3 {
-    font-family: 'Roboto Slab', serif;
-    font-weight: 900;
+  font-family: 'Scope One', serif;
+  font-size: 30px;
+  font-weight: 700;
 }
 
 h4 {
-    font-family: 'Roboto', serif;
-    padding: 0;
-    margin: 0;
-}
-
-h5 {
-    font-family: 'Bree Serif', serif;
-    padding: 0;
-    margin: 0;
+  font-family: 'Cabin', serif;
 }
 
 h6 {
-    font-family: 'Roboto Condensed', serif;
+  font-family: 'Open Sans Condensed', serif;
+  letter-spacing: .25px;
 }
 
 p {
-    font-family: 'Open Sans Condensed', serif;
-    font-size: 14px;
-    letter-spacing: .25px;
+  font-family: 'Open Sans Condensed', serif;
+  font-size: 13.5px;
+  letter-spacing: .25px;
 
 }
 
 @media only screen and (max-width: 767px) {
-    p {
-        font-family: 'Open Sans Condensed', serif;
-        font-size: 11px;
-        letter-spacing: .25px;
+  p {
+    font-family: 'Open Sans Condensed', serif;
+    font-size: 10.5px;
+    letter-spacing: .25px;
 
-    }
-}
-
-.margin-fix {
-    margin: 32px 16px;
-}
-
-.product-title {
-    letter-spacing: 2px;
-}
-
-.fixed-action-btn {
-    position: fixed;
-    right: 16px;
-    top: 16px;
-    margin-bottom: 0;
-    z-index: 998;
-}
-
-.snipcart-total-price {
-    font-family: 'Roboto Condensed', serif;
-    font-weight: bold;
-}
-
-.footer-color{
-  background-color: #000;
+  }
 }
