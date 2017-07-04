@@ -31,10 +31,10 @@ footer {
   letter-spacing: .25px;
 }
 
-.w3-btn{
+.w3-btn {
   font-family: 'Roboto', serif;
-
 }
+
 .fixed-action-btn {
   position: fixed;
   right: 16px;
@@ -43,14 +43,34 @@ footer {
   z-index: 998;
 }
 
+.fixed-design-btn {
+  position: fixed;
+  left: 16px;
+  top: 16px;
+  margin-bottom: 0;
+  z-index: 998;
+}
+
+.form-text {
+  font-family: 'Open Sans', serif;
+  letter-spacing: .25px;
+}
+
 .snipcart-total-price {
-  font-family: 'Roboto Condensed', serif;
+  font-family: 'Open Sans Condensed', serif;
   font-weight: bold;
 }
 
 .custom-white {
   background-color: rgba(255, 255, 255, 0.5);
   color: #000;
+}
+
+#snipcart-main-content .custom-snipcart-footer-text {
+  background-color: #222;
+  font-family: 'Open Sans', serif;
+  color: #fff;
+  font-size: 13px;
 }
 
 h1 {
@@ -82,7 +102,6 @@ p {
   font-family: 'Open Sans Condensed', serif;
   font-size: 13.5px;
   letter-spacing: .25px;
-
 }
 
 @media only screen and (max-width: 767px) {
@@ -90,6 +109,5 @@ p {
     font-family: 'Open Sans Condensed', serif;
     font-size: 10.5px;
     letter-spacing: .25px;
-
   }
 }

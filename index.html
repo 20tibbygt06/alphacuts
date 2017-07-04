@@ -15,7 +15,7 @@
 
 
   <!-- Googole Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Patua+One|Scope+One|Roboto|Open+Sans+Condensed:300|Cabin" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Patua+One|Scope+One|Roboto|Open+Sans+Condensed:300|Open+Sans|Cabin" rel="stylesheet">
 
 
 
@@ -45,13 +45,7 @@
 
   <!-- Instagram Slide -->
   <div id="instafeed" class="instafeed"></div>
-  <form enctype="multipart/form-data" action="//mailthis.to/senmemail2" method="post">
-      <input type="text" name="name">
-      <input type="email" name="email">
-      <textarea name="message"></textarea>
-      <input type="file" name="file">
-      <input type="submit" value="Send">
-  </form>
+
   <!-- Products -->
   <div class="w3-content">
     <h2 class="w3-center w3-text-white">Clippers</h2>
@@ -215,6 +209,47 @@
     </a>
   </div>
 
+  <!--Submit Design Modal -->
+  <button onclick="document.getElementById('design-modal').style.display='block'" class="w3-btn w3-black w3-border w3-padding-tiny w3-hover-green fixed-design-btn" style="cursor:pointer">
+    Submit Design
+    </button>
+
+  <div id="design-modal" class="w3-modal">
+    <div class="w3-modal-content w3-black w3-border">
+      <header class="w3-container w3-white w3-center">
+        <span onclick="document.getElementById('design-modal').style.display='none'" class="w3-btn w3-white w3-display-topright w3-hover-red">&times;</span>
+        <h4>Submit Your Design</h4>
+      </header>
+      <div class="form-text">
+        <form action="https://getsimpleform.com/messages?form_api_token=52e1bfa7b5eaadffbd20d01ee6bacfde" method="post" enctype="multipart/form-data">
+          <!-- all your input fields here.... -->
+          <div class="w3-panel w3-col m6">
+            <label>Order Number: </label>
+            <input class="input-box" type='text' name='Order Number' value="" />
+          </div>
+
+          <div class="w3-panel w3-col m6">
+            <label>Design File: </label>
+            <input type="file" name='File: '>
+          </div>
+          <div class="w3-panel">
+            <input class="w3-btn w3-border w3-hover-green" style="curser:pointer;" type='submit' value='Submit' />
+          </div>
+
+        </form>
+
+      </div>
+      <div class="w3-container w3-border-top">
+        <h6>
+            NOTE: In order for a quick turn around, submit your brand or design file in black and white in a high resolution for best quality. We only accept jpg or png file formats. We will accept your brand or design files if they do not meet the requirments listed, but allow extra time to process.
+          </h6>
+        <h6>
+            All additional questions or concerns about your design can be sent to Designs@alphacuts.club
+          </h6>
+      </div>
+    </div>
+  </div>
+
   <!-- Slick.js javscript file -->
   <script type="text/javascript" src="slick/slick.min.js"></script>
   <script type="text/javascript" src="js/slick-custom.js"></script>
@@ -224,6 +259,42 @@
   <script type="text/javascript" src="js/feed.js"></script>
   <!-- Customize Snipcart -->
   <script type="text/javascript" src="js/snipCustom.js"></script>
+
+
+  <script id="cart-content-text" type="text/template">
+    <div class="custom-snipcart-footer-text w3-black w3-border">
+      <header class="w3-container w3-white">
+        <h4>Submit Your Design Files</h4>
+      </header>
+      <div class="form-text">
+        <form action="https://getsimpleform.com/messages?form_api_token=52e1bfa7b5eaadffbd20d01ee6bacfde" method="post" enctype="multipart/form-data">
+          <!-- all your input fields here.... -->
+          <div class="w3-panel w3-col m6">
+            <label>Order Number: </label>
+            <input class="input-box" type='text' name='Order Number' value="{{invoiceNumber}}" />
+          </div>
+
+          <div class="w3-panel w3-col m6">
+            <label>Design File: </label>
+            <input type="file" name='File: '>
+          </div>
+          <div class="w3-panel">
+            <input class="w3-btn w3-border w3-hover-green" style="curser:pointer;" type='submit' value='Submit' />
+          </div>
+
+        </form>
+
+      </div>
+      <div class="w3-container w3-border-top">
+        <h6>
+              NOTE: In order for a quick turn around, submit your brand or design file in black and white in a high resolution for best quality. We only accept jpg or png file formats. We will accept your brand or design files if they do not meet the requirments listed, but allow extra time to process.
+            </h6>
+        <h6>
+              All additional questions or concerns about your design can be sent to Designs@alphacuts.club
+            </h6>
+      </div>
+    </div>
+  </script>
 
 </body>
 
